@@ -1,0 +1,137 @@
+.logo-section {
+  background-image: url('https://res.cloudinary.com/dmdbza74n/image/upload/v1632761332/creshna/css/poster-colored_dbhejj.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  margin: auto;
+  display: block;
+  max-width: 95%;
+  max-height: 200px;
+}
+
+.title {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+h1 {
+  color: rgb(160, 160, 160);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 6vw, 3rem);
+  letter-spacing: clamp(0.5rem, 3vw, 40px);
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.band-section {
+  margin-top: 5rem;
+}
+
+h2 {
+  color: rgb(29, 29, 29);
+  font-size: clamp(3rem, 11vw, 160px);
+  letter-spacing: clamp(0.5rem, 8vw, 100px);
+  line-height: 1;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.band-image-container {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.band-image-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1100px) {
+  .band-image-container img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .band-image-container img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.band-image-left {
+  align-self: start;
+}
+
+.band-image-right {
+  align-self: end;
+}
+
+.imagemodal-container {
+  background-image: url('https://res.cloudinary.com/dmdbza74n/image/upload/v1632761468/creshna/css/space-colored_w6auql.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.albums-section,
+.merch-section {
+  margin-top: 7rem;
+}
+
+.merch-section {
+  background-image: url('https://res.cloudinary.com/dmdbza74n/image/upload/v1632761505/creshna/css/feature_nv16ca.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-bottom: 15rem;
+}
+
+.merch-container {
+  margin-inline: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  place-content: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .merch-container {
+    margin-inline: 5%;
+  }
+}
+
+.merch-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.merch-container div {
+  width: 200px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 490px) {
+  .merch-container {
+    margin-inline: 0%;
+  }
+  .merch-container div {
+    width: 150px;
+    height: 150px;
+  }
+}
