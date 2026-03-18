@@ -7,8 +7,8 @@ interface ImageModalProps {
 }
 
 function ImageModal ({ imageData }: ImageModalProps): JSX.Element {
-  const [currentImage, setCurrentImage] = useState(0)
-  const [isViewerOpen, setIsViewerOpen] = useState(false)
+  const [currentImage, setCurrentImage] = useState<number>(0)
+  const [isViewerOpen, setIsViewerOpen] = useState<boolean>(false)
 
   const openImageViewer = useCallback((index: number) => {
     setCurrentImage(index)
